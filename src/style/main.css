@@ -1,0 +1,44 @@
+.btn-primary {
+    padding: 0.5rem 1.5rem;
+    background-color: indigo;
+    border: none;
+}
+
+
+.btn-primary:hover{
+    background-color: violet;
+}
+
+/* #btn-add{
+
+} */
+
+.btn-edit,
+.btn-delete{
+    padding: 0;
+    color: inherit;
+}
+
+.btn-delete:hover{
+    color: inherit;
+}
+
+
+.form-check-input:checked{
+    background-color: indigo;
+    border-color: indigo;
+}
+
+.modal {
+    pointer-events: none;
+    position: fixed;
+    max-width: 500px;
+    width: 90%;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hidden  { 
+    display: none;
+  }

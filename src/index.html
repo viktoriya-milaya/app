@@ -4,206 +4,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online library</title>
+  <title>My diary</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./style/bootstrap.min.css">
-  <link rel="stylesheet" href="./scss/main.scss">
+  <link rel="stylesheet" href="./style/main.css">
 </head>
 
-<body>
 
-  <head>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light  pt-3 pb-3">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="#">goodReads</a>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#">my books</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                    viewBox="0 0 1024 1024">
-                    <path
-                      d="M512 512a192 192 0 1 0 0-384 192 192 0 0 0 0 384zm0 64a256 256 0 1 1 0-512 256 256 0 0 1 0 512zm320 320v-96a96 96 0 0 0-96-96H288a96 96 0 0 0-96 96v96a32 32 0 1 1-64 0v-96a160 160 0 0 1 160-160h448a160 160 0 0 1 160 160v96a32 32 0 1 1-64 0z" />
-                  </svg> sing in
-                </a>
-              </li>
-              <!-- <li class="nav-item">
-                            <a class="nav-link" href="#">join</a>
-                          </li> -->
-            </ul>
-            <!-- <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form> -->
-          </div>
-        </div>
-      </nav>
-    </div>
-  </head>
+<body class="bg-dark text-white">
   <main>
-    <div class="container">
-      <h1 class="pt-3 pb-5">Best Books of All Time: <br> The World Library List</h1>
-      <div>
-        <div class="row">
-          <div class="col-4 col-lg-4">
-            <img class=" img-fluid" src="./img/img-1.jpg" alt="
-                book cover ">
-          </div>
-          <div class="col-8">
-            <span class="pt-2 ps-3 pb-2 pe-3 fs-4 border rounded-circle">1</span>
-            <h3 class="fs-3 pt-4"> Pride and Prejudice</h3>
-            <p class="fst-italic">Jane Austen, Anna Quindlen (Introduction)</p>
-            <p>Rating <span class="fw-bold">4.28</span></p>
-            <p>Since its immediate success in 1813, Pride and Prejudice has remained one of the most popular
-              novels in the English language. Jane Austen called this brilliant work "her own darling
-              child"
-              and its vivacious heroine, Elizabeth Bennet, "as delightful a creature as ever appeared in
-              print." The romantic clash between the opinionated Elizabeth and her proud beau, Mr. Darcy,
-              is a
-              splendid performance of civilized sparring. And Jane Austen's radiant wit sparkles as her
-              characters dance a delicate quadrille of flirtation and intrigue, making this book the most
-              superb comedy of manners of Regency England.</p>
+    <div class="container-sm">
+      <h1 class="pt-5 pb-3">My diary</h1>
 
+      <!-- Form -->
+      <form id="form">
 
-            <!-- Buttons -->
-            <div class="col-8 pt-2  d-flex gap-3">
-              <button type="button" class="btn btn-primary">
-                <?xml version="1.0" encoding="UTF-8"?><svg width="16" height="16" viewBox="0 0 24 24">
-                  <path d="M20 9 5 0v24l15-9a3 3 0 0 0 0-6Zm-1 4L7 20V4l12 7a1 1 0 0 1 0 2Z"
-                    data-name="01 align center" />
-                </svg>
-                Listen
-              </button>
-              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Leave feedback</button>
-              <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Leave feedback</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
-                        <div class="row mb-3">
-                          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                          <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3">
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <label for="mainThought" class="col-sm-2 col-form-label">
-                            Main thought</label>
-                          <div class="col-sm-10">
-                            <input type="text" class="form-control" id="mainThought">
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <label for="review" class="col-sm-2 col-form-label">
-                            Review</label>
-                          <div class="col-sm-10">
-                            <textarea class="form-control"></textarea>
-                          </div>
-                        </div>
-                        <fieldset class="row mb-3">
-                          <legend class="col-form-label col-sm-2 pt-0">Rating</legend>
-                          <div class="col-sm-10 d-flex gap-3">
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                value="option1" checked>
-                              <label class="form-check-label" for="gridRadios1">
-                                1
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                value="option2">
-                              <label class="form-check-label" for="gridRadios2">
-                                2
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                value="option2">
-                              <label class="form-check-label" for="gridRadios2">
-                                3
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                value="option2">
-                              <label class="form-check-label" for="gridRadios2">
-                                4
-                              </label>
-                            </div>
-                            <div class="form-check">
-                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                value="option2">
-                              <label class="form-check-label" for="gridRadios2">
-                                5
-                              </label>
-                            </div>
-                          </div>
-                        </fieldset>
-                        <div class="row mb-3">
-                          <div class="col-sm-10 offset-sm-2">
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
-                      <input class="btn btn-primary" type="submit" value="Submit">
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <!-- Date & mood-->
+        <div class="row pb-3 d-flex flex-sm-wrap">
+          <div class="col-3">
+            <label for="date" class="col-form-label">Date</label>
+            <div class="input-group date" id="datepicker">
+              <input type="date" class="form-control" id="date" />
             </div>
           </div>
-
-        </div>
-      </div>
-      <div class="row">
-        <h3 class="pt-3 pb-3">Reviews</h3>
-        <div class="review mt-2 border-bottom">
-          <p class="fst-italic">user@mail.ru <br> <span class="fw-bold">"Lorem ipsum dolor sit amet"</span>
-          </p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum minus laudantium accusamus nobis
-            nisi
-            expedita quis cum cupiditate, dolorum explicabo quos animi nulla consequatur sed quia veritatis
-            numquam dicta vitae ex excepturi dolorem fuga. Dignissimos, numquam tempora. Cupiditate atque
-            maiores ipsum fugit! Ipsum, asperiores inventore.</p>
-        </div>
-        <div class="review mt-2 border-bottom">
-          <p class="fst-italic">user@mail.ru <br> <span class="fw-bold">"Lorem ipsum dolor sit amet"</span>
-          </p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum minus laudantium accusamus nobis
-            nisi
-            expedita quis cum cupiditate, dolorum explicabo quos animi nulla consequatur sed quia veritatis
-            numquam dicta vitae ex excepturi dolorem fuga. Dignissimos, numquam tempora. Cupiditate atque
-            maiores ipsum fugit! Ipsum, asperiores inventore.</p>
+          <div class="col-9">
+            <label for="inputMood" class="col-form-label">My mood</label>
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="inputMood">
+            </div>
+          </div>
         </div>
 
+        <!-- progress today-->
+        <div class="row pb-3">
+          <label for="inputProgress" class="col-form-label">Progress today</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="inputProgress">
+          </div>
+        </div>
+
+        <!-- my thoughts-->
+        <div class="row pb-3">
+          <label for="inputMood" class="col-form-label">My thoughts</label>
+          <div class="col-sm-12">
+            <textarea class="form-control"></textarea>
+          </div>
+        </div>
+
+        <div class="row pt-3 ">
+          <!-- Rating of the day-->
+          <fieldset class="row align-items-center">
+            <legend class="col-form-label col-sm-3 pt-0">Rating of the day</legend>
+            <div class="col-sm-9 d-flex gap-4 align-items-center">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                <label class="form-check-label" for="gridRadios1">
+                  1
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  2
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label class="form-check-label" for="gridRadios3">
+                  3
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                <label class="form-check-label" for="gridRadios4">
+                  4
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5">
+                <label class="form-check-label" for="gridRadios5">
+                  5
+                </label>
+              </div>
+
+              <!-- button -->
+              <button type="submit" class="btn btn-primary" id="btn-add">Add</button>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+      <!-- alert -->
+      <div class="alert hidden " role="alert" id="alert">
       </div>
+
+      <!-- thoughts -->
+      <div class="row mt-2" id="thoughts-list">
+        <div class="day pt-3 pb-3 mt-5 border border-1 border-light">
+            <div class="btn-grop d-flex justify-content-end">
+              <button class="btn btn-edit">✎</button>
+              <button class="btn btn-delete text-white">✗</button>
+            </div>
+          <p class="fw-bold">23/03/12 <span class="#">⭐ 5</span></p>
+          <p class="pt-1 fst-italic">My mood today is<span class="#">*</span> </p>
+          <p class="pt-1">My progress:<span class="#">*</span> </p>
+          <p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, minima quas, hic corporis
+            cumque enim
+            necessitatibus ipsam incidunt pariatur quis magni recusandae magnam neque voluptatum impedit eum praesentium
+            natus obcaecati explicabo eaque veritatis itaque rem. Distinctio minima obcaecati necessitatibus est iste?
+            Laborum libero enim, similique nisi quas mollitia praesentium eius.</p>
+        </div>
+
+      </div>
+
+
+
     </div>
   </main>
-  <footer></footer>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script> -->
 
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script type="module" src="./js/app.js"></script>
